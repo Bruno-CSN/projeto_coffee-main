@@ -1,0 +1,187 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/cardapio2.jpg);
+    background-size: cover;
+    background-position-y: 10%;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+header::before{
+    content: "" ; /* Necessário para criar o pseudo-elemento */
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3); /* Película escura */
+    width: 100%;
+    height: 100vh;
+}
+
+header * {
+    position: relative;
+    z-index: 2;
+}
+
+.header-content{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-align: center;
+    color: white;
+    transform: translate(-5%, 5%);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Película escura */
+ box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+ border-radius: 20px;
+ line-height: 1.6;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+
+.button-cardapio {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #c49a6c; 
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.button-cardapio:hover {
+    background-color: #a87d50;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+.button-cardapio:focus {
+    outline: none;
+}
+
+
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.icon-menu {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.icon-menu img {
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.menu ul li a:hover {
+    color: #f8b400;
+}
+
+
+
+.menu_cardapio{
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+}
+
+.bloco_produtos {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+background-image: radial-gradient(circle at top, #211f1a 60%, #211f1a 60%, #fff 61%);
+text-transform: uppercase;
+font-weight: 700;
+
+}
+
+
+
+
+
+ 
+
+.bloco_produtos img{
+    width: 200px;
+    height: 150px;
+}
